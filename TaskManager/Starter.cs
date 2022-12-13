@@ -1,4 +1,6 @@
-﻿namespace TaskManager;
+﻿using static TaskManager.runningProcesses;
+
+namespace TaskManager;
 
 public class Starter
 {
@@ -12,6 +14,7 @@ public class Starter
                 {
                     case 1:
                         Console.WriteLine("Running processes in your system:\n");
+                        getRunningProcesses();
                         break;
                     case 2:
                         Console.WriteLine("Goodbye!");
