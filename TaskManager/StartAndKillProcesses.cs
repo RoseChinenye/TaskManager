@@ -10,7 +10,7 @@ public class StartAndKillProcesses
         try
         {
             Console.Clear();
-            Console.WriteLine("Enter the File Location of the process you want to start: \nEg. C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe  \n");
+            Console.WriteLine("Enter the  path and filename of the process you want to start: \nEg. C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe  \n");
             var userInput3 = Console.ReadLine();
             if (int.TryParse(userInput3, out int selection3))
             {

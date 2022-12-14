@@ -1,4 +1,5 @@
 ﻿using static TaskManager.runningProcesses;
+using static TaskManager.thread;
 
 namespace TaskManager;
 
@@ -6,7 +7,7 @@ public class Starter
 {
     public static void getStarted()
     {
-        Console.WriteLine("1. List all running processes in your system\n2. Exit the program");
+        Console.WriteLine("1. List all running processes in your system\n2. Thread\n3. Exit the program");
         var selection1 = Console.ReadLine();
         if(int.TryParse(selection1, out int userInput1))
         {
@@ -17,6 +18,9 @@ public class Starter
                         getRunningProcesses();
                         break;
                     case 2:
+                        StartThread();
+                        break;
+                    case 3:
                         Console.WriteLine("Goodbye!");
                         break;
                     default:

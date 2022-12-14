@@ -13,7 +13,7 @@ public class runningProcesses
 
             foreach (var s in runningProcesses)
             {
-                var info = $"Process ID: {s.Id}\tName: {s.ProcessName}";
+                var info = $"Process ID: {s.Id}     Name: {s.ProcessName}";
                 Console.WriteLine(info);
 
             }
